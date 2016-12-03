@@ -1,0 +1,20 @@
+<div class="ui-g">
+    <div class="ui-g-12">
+        <div class="card card-w-title">
+            <h1>Sales Order List</h1>
+            <div class="ui-widget-header ui-helper-clearfix" style="padding:4px 10px;border-bottom: 0 none">
+                <i class="fa fa-search" style="float:right;margin:4px 4px 0 0"></i>
+                <input #gb type="text" pInputText size="30" style="float:right" placeholder="Global Filter">
+            </div>
+            <p-dataTable [value]="cars" [rows]="15" [paginator]="true" resizableColumns="true" sortMode="multiple" [globalFilter]="gb"
+                [contextMenu]="cmGrid" selectionMode="single" [(selection)]="selectedCar">
+                <p-column field="vin" header="Vin" [sortable]="true" [filter]="true" filterMatchMode="contains"></p-column>
+                <p-column field="year" header="Year" [sortable]="true" [filter]="true" filterMatchMode="contains"></p-column>
+                <p-column field="brand" header="Brand" [sortable]="true" [filter]="true" filterMatchMode="contains"></p-column>
+                <p-column field="color" header="Color" [sortable]="true" [filter]="true" filterMatchMode="contains"></p-column>
+            </p-dataTable>
+            <p-growl [value]="messages"></p-growl>
+            <p-contextMenu #cmGrid [model]="items"></p-contextMenu>
+        </div>
+    </div>
+</div>
