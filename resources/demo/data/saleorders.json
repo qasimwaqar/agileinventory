@@ -1,0 +1,186 @@
+{
+    "data": [
+        {
+            "orderId": 22526,
+            "orderNo": "SO-022526",
+            "version": 3,
+            "orderDate": "25-12-2016 14:30:00",
+            "invoiceDate": "25-12-2016 14:30:00",
+            "dueDate": "27-12-2016 14:30:00",
+            "requestedShipDate": "27-12-2016 14:30:00",
+            "shippedDate": "27-12-2016 14:30:00",
+            "orderStatus": [
+                "Fulfilled",
+                "Partial"
+            ],
+            "paymentStatus": "Fulfilled",
+            "payments": [
+                {
+                    "amount": "28000",
+                    "paymentDate": "27-12-2016 14:30:00",
+                    "paymentMethod": "Cash",
+                    "receivedBy": {
+                        "userId": 2000,
+                        "userName": "Accountant"
+                    }
+                }
+            ],
+            "taxingScheme": [
+                {
+                    "id": 1,
+                    "scheme": "FED",
+                    "name": "FED",
+                    "rate": 5,
+                    "isShipping": false
+                }
+            ],
+            "paymentTerms": 10,
+            "orderLocation": "Warehouse 1",
+            "subTotal": 30875,
+            "orderTotal": 30875,
+            "paidAmount": 28000,
+            "balanceAmount": 2875,
+            "shipmentCharges": 0,
+            "shipmentCarrier": "Self",
+            "returnCharges": 0,
+            "otherCharges": 0,
+            "nonCustomerCost": 0,
+            "taxCharges": 0,
+            "orderRemarks": "",
+            "fulfillRemarks": "",
+            "createdBy": {
+                "userId": 1000,
+                "userName": "SalesRep"
+            },
+            "lastUpdatedBy": {
+                "userId": 3000,
+                "userName": "SalesRep"
+            },
+            "lastUpdatedOn": "27-12-2016 14:30:00",
+            "customer": {
+                "customerId": 2323,
+                "customerName": "Imran",
+                "customerContact": "Imran",
+                "ContactNo": "",
+                "addresses": [
+                    {
+                        "addressType": "Business",
+                        "street": "Flar 20, Eagle Plaza",
+                        "town": "Blue Area",
+                        "city": "Islamabad",
+                        "province": "Islamabad",
+                        "postalCode": "43000",
+                        "country": "Pakistan",
+                        "remarks": "Site office",
+                        "locationType": "Commercial"
+                    },
+                    {
+                        "addressType": "Billing",
+                        "street": "House # 34, street # 15",
+                        "town": "Garden town, near khanna pul",
+                        "city": "islamabad",
+                        "province": "Islamabad",
+                        "postalCode": "43000",
+                        "country": "Pakistan",
+                        "remarks": "Main office",
+                        "locationType": "Residential"
+                    },
+                    {
+                        "addressType": "Shipping",
+                        "street": "Flar 20, Eagle Plaza",
+                        "town": "Blue Area",
+                        "city": "Islamabad",
+                        "province": "Islamabad",
+                        "postalCode": "43000",
+                        "country": "Pakistan",
+                        "remarks": "Site office",
+                        "locationType": "Commercial"
+                    }
+                ]
+            },
+            "products": [
+                {
+                    "productId": 1003,
+                    "productName": "Samsung galaxy A5",
+                    "description": "2014 model",
+                    "quantity": 1,
+                    "unitPrice": 32000,
+                    "discount": 5,
+                    "subTotal": 30875,
+                    "productStatus": "Fulfilled",
+                    "pick": [
+                        {
+                            "location": "Warehouse 1",
+                            "quantity": 1,
+                            "pickStatus": "Fulfilled",
+                            "fulfilledBy": {
+                                "userId": 3000,
+                                "userName": "locationRep"
+                            },
+                            "fulfilledDate": "26-12-2016 14:30:00"
+                        }
+                    ],
+                    "return": [
+                        {
+                            "quantity": 1,
+                            "returnDate": "28-12-2016 14:30:00",
+                            "location": "Warehouse 1",
+                            "isDiscarded": false,
+                            "unitPrice": 32000,
+                            "discount": 5,
+                            "subTotal": 30875,
+                            "returnedBy": {
+                                "userId": 4000,
+                                "userName": "ReceivingRep"
+                            }
+                        }
+                    ],
+                    "restock": [
+                        {
+                            "quantity": 1,
+                            "restockDate": "29-12-2016 14:30:00",
+                            "location": "Warehouse 1",
+                            "restockedBy": {
+                                "userId": 5000,
+                                "userName": "inventoryRep"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "versions": [
+                {
+                    "version": 1,
+                    "orderStatus": [
+                        "Created"
+                    ],
+                    "lastUpdatedBy": {
+                        "userId": 3000,
+                        "userName": "SalesRep"
+                    },
+                    "lastUpdatedOn": "27-12-2016 14:30:00"
+                },
+                {
+                    "version": 2,
+                    "payments": [
+                        {
+                            "amount": "28000",
+                            "paymentDate": "27-12-2016 14:30:00",
+                            "paymentMethod": "Cash",
+                            "receivedBy": {
+                                "userId": 2000,
+                                "userName": "Accountant"
+                            }
+                        }
+                    ],
+                    "paidAmount": 28000,
+                    "lastUpdatedBy": {
+                        "userId": 3000,
+                        "userName": "SalesRep"
+                    },
+                    "lastUpdatedOn": "27-12-2016 14:30:00"
+                }
+            ]
+        }
+    ]
+}
